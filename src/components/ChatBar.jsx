@@ -48,7 +48,10 @@ const ChatBar = ({ chatList, setChatList }) => {
 
   return (
     <div className="h-24 absolute bottom-0 w-full">
-      <form className="h-full flex items-center px-4" onSubmit={onSubmitChat}>
+      <form
+        className="border-t-2 border-gray-300 h-full flex items-center px-4"
+        onSubmit={onSubmitChat}
+      >
         <input
           className={`mr-4 grow py-1 px-2 focus:outline-none border-2 focus:border-sky-500 ${
             isLoading && "bg-gray-100 text-gray-500"
